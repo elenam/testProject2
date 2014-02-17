@@ -26,7 +26,8 @@ app.set 'layout', 'layouts/main'
 app.set 'partials',
   head: 'partials/head',
   navbar: 'partials/navbar',
-  scripts: 'partials/scripts'
+  scripts: 'partials/scripts',
+  templates: 'partials/templates'
 
 app.engine 'html', require('hogan-express')
 app.enable 'view cache'
