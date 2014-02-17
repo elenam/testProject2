@@ -2,7 +2,7 @@ mongoose = require 'mongoose'
 Schema = mongoose.Schema
 
 
-Section = new Schema(
+SectionSchema = new Schema(
   title: String
   link: String
   body: String
@@ -10,7 +10,7 @@ Section = new Schema(
   htmlId: String
 )
 
-Section = mongoose.model 'Section', Section
+Section = mongoose.model 'Section', SectionSchema
 
 module.exports =
   Section : Section

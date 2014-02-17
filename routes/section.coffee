@@ -21,6 +21,7 @@ exports.create = (req, res) ->
 
 exports.getById = (req, res) ->
   id = req.route.params['id']
+  console.log "looking for #{ id }"
   Section.findById id, (err, result) ->
     res.send result
 

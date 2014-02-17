@@ -1,5 +1,5 @@
   class window.Section extends Backbone.Model
-    urlRoot: '/section'
+    urlRoot: '/api/section'
     idAttribute: '_id' #conforming to mongodb id syntax
     initialize: ->
       console.log 'Initializing a Section'

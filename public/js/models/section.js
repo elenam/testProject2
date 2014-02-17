@@ -10,7 +10,7 @@
       return Section.__super__.constructor.apply(this, arguments);
     }
 
-    Section.prototype.urlRoot = '/section';
+    Section.prototype.urlRoot = '/api/section';
 
     Section.prototype.idAttribute = '_id';
 
@@ -31,5 +31,3 @@
   })(Backbone.Model);
 
 }).call(this);
-
-//# sourceMappingURL=section.map
